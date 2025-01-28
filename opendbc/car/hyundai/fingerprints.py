@@ -492,37 +492,20 @@ FW_VERSIONS = {
       b'\xf1\x00IK  MFC  AT KOR LHD 1.00 1.01 95740-G9000 170920',
       b'\xf1\x00IK  MFC  AT USA LHD 1.00 1.01 95740-G9000 170920',
       b'\xf1\x00IK  MFC  AT USA LHD 1.00 1.04 99211-G9000 220401',
+  },  
+             
+        (Ecu.combinationMeter, 0x7c6, 'None'): [
+              b'\xf1\x00071',
+                        ],
 
-               'carFw': [{'address': 1990,
-                          'brand': 'hyundai',
-                          'bus': 1,
-                          'ecu': 'combinationMeter',
-                          'fwVersion': b'\xf1\x00071',
-                          'logging': True,
-                          'obdMultiplexing': True,
-                          'request': [b'"\xf1\x00'],
-                          'responseAddress': 1998,
-                          'subAddress': 0},
-                         {'address': 2004,
-                          'brand': 'hyundai',
-                          'bus': 1,
-                          'ecu': 'eps',
-                          'fwVersion': b'\xf1\x00IK  MDPS R 1.00 5.09 57700-G9500 4I4CL509',
-                          'logging': False,
-                          'obdMultiplexing': True,
-                          'request': [b'"\xf1\x00'],
-                          'responseAddress': 2012,
-                          'subAddress': 0},
-                         {'address': 2000,
-                          'brand': 'hyundai',
-                          'bus': 1,
-                          'ecu': 'fwdRadar',
-                          'fwVersion': b'\xf1\x00IK__ SCC FHCUP      1.00 1.00 99110-G9300         ',
-                          'logging': False,
-                          'obdMultiplexing': True,
-                          'request': [b'"\xf1\x00'],
-                          'responseAddress': 2008,
-                          'subAddress': 0},
+  car.GENESIS_G70_2020: {
+        (Ecu.type, 0xAddress-converted-to-hex, 0xSub-address-converted-to-hex-'None'-if-0): [
+              b'fwVersion',
+                    b'existingFirmware',
+                        ],
+                          },
+  }
+
                          {'address': 1971,
                           'brand': 'hyundai',
                           'bus': 1,
@@ -532,7 +515,14 @@ FW_VERSIONS = {
                           'obdMultiplexing': True,
                           'request': [b'"\xf1\x00'],
                           'responseAddress': 1979,
-                          'subAddress': 0},
+                          'subAddress': 0}, 
+                           car.GENESIS_G70_2020: {
+                                (Ecu.type, 0xAddress-converted-to-hex, 0xSub-address-converted-to-hex-'None'-if-0): [
+                                      b'fwVersion',
+                                            b'existingFirmware',
+                                                ],
+                                                  },
+                          }
                          {'address': 1988,
                           'brand': 'hyundai',
                           'bus': 1,
@@ -543,6 +533,13 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x00'],
                           'responseAddress': 1996,
                           'subAddress': 0},
+                            car.GENESIS_G70_2020: {
+                                  (Ecu.type, 0xAddress-converted-to-hex, 0xSub-address-converted-to-hex-'None'-if-0): [
+                                        b'fwVersion',
+                                              b'existingFirmware',
+                                                  ],
+                                                    },
+                            }
                          {'address': 1990,
                           'brand': 'hyundai',
                           'bus': 0,
@@ -553,6 +550,13 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x00'],
                           'responseAddress': 1998,
                           'subAddress': 0},
+                            car.GENESIS_G70_2020: {
+                                  (Ecu.type, 0xAddress-converted-to-hex, 0xSub-address-converted-to-hex-'None'-if-0): [
+                                        b'fwVersion',
+                                              b'existingFirmware',
+                                                  ],
+                                                    },
+                            }
                          {'address': 2004,
                           'brand': 'hyundai',
                           'bus': 0,
@@ -563,6 +567,13 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x00'],
                           'responseAddress': 2012,
                           'subAddress': 0},
+                            car.GENESIS_G70_2020: {
+                                  (Ecu.type, 0xAddress-converted-to-hex, 0xSub-address-converted-to-hex-'None'-if-0): [
+                                        b'fwVersion',
+                                              b'existingFirmware',
+                                                  ],
+                                                    },
+                            }
                          {'address': 2000,
                           'brand': 'hyundai',
                           'bus': 0,
@@ -573,6 +584,7 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x00'],
                           'responseAddress': 2008,
                           'subAddress': 0},
+
                          {'address': 1988,
                           'brand': 'hyundai',
                           'bus': 0,
@@ -583,6 +595,13 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x00'],
                           'responseAddress': 1996,
                           'subAddress': 0},
+                            car.GENESIS_G70_2020: {
+                                  (Ecu.type, 0xAddress-converted-to-hex, 0xSub-address-converted-to-hex-'None'-if-0): [
+                                        b'fwVersion',
+                                              b'existingFirmware',
+                                                  ],
+                                                    },
+                            }
                          {'address': 1988,
                           'brand': 'hyundai',
                           'bus': 0,
@@ -592,7 +611,14 @@ FW_VERSIONS = {
                           'obdMultiplexing': True,
                           'request': [b'"\xf1\x8b'],
                           'responseAddress': 1996,
-                          'subAddress': 0},
+                          'subAddress': 0}, 
+                           car.GENESIS_G70_2020: {
+                                (Ecu.type, 0xAddress-converted-to-hex, 0xSub-address-converted-to-hex-'None'-if-0): [
+                                      b'fwVersion',
+                                            b'existingFirmware',
+                                                ],
+                                                  },
+                          }
                          {'address': 2004,
                           'brand': 'hyundai',
                           'bus': 0,
@@ -603,6 +629,13 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x8b'],
                           'responseAddress': 2012,
                           'subAddress': 0},
+                            car.GENESIS_G70_2020: {
+                                  (Ecu.type, 0xAddress-converted-to-hex, 0xSub-address-converted-to-hex-'None'-if-0): [
+                                        b'fwVersion',
+                                              b'existingFirmware',
+                                                  ],
+                                                    },
+                            }
                          {'address': 1990,
                           'brand': 'hyundai',
                           'bus': 0,
@@ -613,7 +646,8 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x8b'],
                           'responseAddress': 1998,
                           'subAddress': 0},
-                         {'address': 2000,
+
+                         {'address'
                           'brand': 'hyundai',
                           'bus': 0,
                           'ecu': 'fwdRadar',
@@ -623,6 +657,7 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x8b'],
                           'responseAddress': 2008,
                           'subAddress': 0},
+
                          {'address': 1975,
                           'brand': 'hyundai',
                           'bus': 0,
@@ -633,6 +668,7 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x8b'],
                           'responseAddress': 1983,
                           'subAddress': 0},
+
                          {'address': 2000,
                           'brand': 'hyundai',
                           'bus': 0,
@@ -643,6 +679,7 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x10'],
                           'responseAddress': 2008,
                           'subAddress': 0},
+
                          {'address': 2017,
                           'brand': 'subaru',
                           'bus': 1,
@@ -653,6 +690,7 @@ FW_VERSIONS = {
                           'request': [b'>\x00', b'"\xf1\x82'],
                           'responseAddress': 2025,
                           'subAddress': 0},
+
                          {'address': 2016,
                           'brand': 'subaru',
                           'bus': 1,
@@ -663,6 +701,7 @@ FW_VERSIONS = {
                           'request': [b'>\x00', b'"\xf1\x82'],
                           'responseAddress': 2024,
                           'subAddress': 0},
+
                          {'address': 2016,
                           'brand': 'volkswagen',
                           'bus': 1,
@@ -673,6 +712,7 @@ FW_VERSIONS = {
                           'request': [b'"\xf1\x87\xf1\x89\xf1\x82'],
                           'responseAddress': 2024,
                           'subAddress': 0},
+                          
                          {'address': 2017,
                           'brand': 'volkswagen',
                           'bus': 1,
@@ -686,7 +726,11 @@ FW_VERSIONS = {
                           'subAddress': 0}],    ],
 
 
-  },
+
+
+
+
+
   CAR.GENESIS_G80: {
     (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00DH__ SCC F-CU-      1.00 1.01 96400-B1110         ',
